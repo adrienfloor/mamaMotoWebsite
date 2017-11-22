@@ -1,0 +1,134 @@
+<div class="shop-page">
+  <div id='product-component-2'></div>
+</div>
+
+<script>
+
+//SHOPIFY//
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy){
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'mama-moto.myshopify.com',
+      apiKey: '1ce906270356d2dcc55065bc52d15e9f',
+      appId: '6',
+    });
+
+    /////// PRODUCT ///////////
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [412589326379],
+        node: document.getElementById('product-component-2'),
+        moneyFormat: '%E2%82%AC%7B%7Bamount%7D%7D',
+        options: {
+          "product": {
+            "text":{
+              "button": "PREORDER",
+              outOfStock: 'Out of stock',
+              unavailable: 'Unavailable',
+            },
+            "layout": "vertical",
+            "variantId": "all",
+            "width": "400px",
+            "contents": {
+              "img": true,
+              "imgWithCarousel": false,
+              "variantTitle": false,
+              "description": false,
+              "buttonWithQuantity": false,
+              "quantity": false
+            },
+            "styles": {
+              "product": {
+                "img": {
+                "border-radius": "10px",
+                "box-shadow": "0 4px 4px 0 rgba(0,0,0,0.2)"
+                },
+                "text-align": "center",
+                "@media (min-width: 601px)": {
+                  "max-width": "100%",
+                  "margin-left": "0",
+                  "margin-bottom": "50px"
+                }
+              },
+              "button": {
+                "border-radius": "5px",
+                "color": "white",
+                "font-weight": "bold",
+                "border": "1px solid black",
+                "background-color": "#000000",
+                ":hover": {
+                  "background-color": "#404040"
+                }
+              },
+              "title": {
+                "font-size": "26px"
+              },
+              "price": {
+                "font-size": "18px"
+              },
+              "compareAt": {
+                "font-size": "15px"
+              }
+            }
+          },
+          "cart": {
+            "text":{
+              "button": "ORDER"
+            },
+            "contents": {
+              "button": true
+            },
+            "styles": {
+              "button": {
+                "font-weight": "bold",
+                "background-color": "#000000",
+                ":hover": {
+                  "background-color": "#404040"
+                }
+              },
+              "footer": {
+                "background-color": "#ffffff"
+              }
+            }
+          },
+          "toggle": {
+            "styles": {
+              "toggle": {
+                "background-color": "#000000",
+                ":hover": {
+                  "background-color": "#404040"
+                }
+              }
+            }
+          }
+        }
+      });
+    });
+
+
+  }
+})();
+
+
+</script>

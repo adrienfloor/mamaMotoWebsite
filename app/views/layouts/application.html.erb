@@ -4,11 +4,49 @@
     <title>MamaMotoWebsite</title>
     <%= csrf_meta_tags %>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+
+    <nav>
+      <div class="nav-container">
+        <div class="nav">
+          <div class="logo">
+            <a href='/'><%= image_tag('logo_test.png', class:'mama_logo') %></a>
+          </div>
+          <div class="nav-items">
+            <%= link_to 'ABOUT', about_path, class:'nav-item'%>
+            <%= link_to 'ADVENTURE', adventure_path, class:'nav-item'%>
+            <%= link_to 'SHOP', shop_path, class:'nav-item'%>
+            <%= link_to 'CONTACT', new_message_path, class:'nav-item' %>
+            <%= link_to 'FAQ', faq_path, class:'nav-item' %>
+          </div>
+          <%= image_tag('logo_moto_test.png', class:'mama_logo_moto') %>
+        </div>
+      </div>
+    </nav>
     <%= yield %>
+
+    <footer>
+      <div class="footer-container <%= current_page?('/') ? ' footer-container-home' : '' %>">
+        <div class="top-line">
+          <div class="socials">
+            <a href="https://www.facebook.com/MamaMotoParisCapeTown/" target="_blank"><%= image_tag('socials/facebook.png', class:'social-item') %></a>
+            <a href="https://www.instagram.com/mamamoto_pct/" target="_blank"><%= image_tag('socials/instagram.png', class:'social-item') %></a>
+            <a href="https://medium.com/@cindycherchevsky" target="_blank"><%= image_tag('socials/medium.png', class:'social-item') %></a>
+            <a href="https://www.youtube.com/channel/UCSr3uK9z7yUdXUwOOcgfYrg" target="_blank"><%= image_tag('socials/youtube.png', class:'social-item') %></a>
+          </div>
+        </div>
+        <div class="bottom-line">
+          <a href="https://www.linkedin.com/in/adrien-floor-23b9bb129/" target="_blank" class="credits">Made with &hearts; by Adrien Floor</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>

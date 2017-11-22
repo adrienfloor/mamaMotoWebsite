@@ -14,7 +14,473 @@
  *= require_self
  */
 
+ html {
+   /*font-family: 'Varela Round', sans-serif;*/
+   font-family: 'Roboto', sans-serif;
+ }
 
-input, textarea {
-  display: block;
+ body{
+   padding: 0;
+   margin: 0;
+ }
+
+/* Header */
+
+.nav-container {
+  width: 100vw;
+  height: 100px;
+  top: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 0;
+  width: 800px;
+}
+
+.mama_logo {
+  width: 400px;
+}
+
+.mama_logo_moto {
+  width: 80px;
+}
+
+.nav-items {
+  height: 100px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-item {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.nav-item:hover {
+  color: grey;
+}
+
+/* Footer */
+
+.footer-container-home {
+  position: fixed;
+}
+
+.footer-container {
+  left: 0;
+  bottom: 0;
+  height: 90px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+.top-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.socials {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.social-item {
+  width: 45px;
+}
+
+.social-item:hover {
+    width: 47px;
+}
+
+.bottom-line {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 20%;
+  margin-bottom: 2px;
+}
+
+.bottom-line .credits {
+  font-size: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.bottom-line .credits:hover {
+  color: grey;
+}
+
+/* Home Page */
+
+.container-home-page {
+
+  background-image: url(home.jpg);
+  min-height: 100%;
+  min-width: 1024px;
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  /* Set up positioning */
+  position: fixed;
+  background-size: cover;
+  left: 0;
+}
+
+/* About Page */
+
+.about-page {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-banner {
+  background-image: url('about_page/about_banner.jpg');
+  background-position: center;
+  height: 80vh;
+  background-size: cover;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.about-sub-flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10%;
+}
+
+.about-subtitle {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 900;
+  letter-spacing: 0.6rem;
+  text-shadow: 3px 3px #000;
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+  border: 3px white solid;
+  box-shadow: 1px 1px #000;
+  padding: 10px;
+  margin: 30px;
+}
+
+.about-subtitle:hover {
+  background-color: rgba(0,0,0,0.4);
+  text-decoration: none;
+  color: white;
+}
+
+/* About the road page */
+
+.about-road-page {
+  min-height: 1000px;
+  height: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-road-page h3 {
+  font-weight: 600;
+  text-transform: none;
+  font-size: 37px;
+  letter-spacing: 0px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.about-road-page p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 28px;
+}
+
+.about-text-box {
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.about-road-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.img-paris {
+  width: 100%;
+  border-radius: 2px 2px 2px 2px;
+  margin-bottom: 20px;
+}
+
+hr {
+  color: rgba(0,0,0,0.2) !important;
+  width: 800px;
+}
+
+.vimeo-player {
+  margin-bottom: 50px;
+}
+
+.img-map {
+  width: 500px;
+  border-radius: 5px;
+  margin: 10px 0 20px 0;
+}
+
+#carousel-1 {
+  margin-bottom: 50px;
+}
+
+.link-marie-claire {
+  color: black;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.link-marie-claire:hover {
+  color: rgba(0,0,0,0.2)
+}
+
+.vimeo-player-alt {
+  margin-top: 30px;
+}
+
+#carousel-2, #carousel-3 {
+  width: 1200px;
+  margin-bottom: 50px;
+}
+/* Adventure Page */
+
+.adventure-page{
+  min-height: 1000px;
+  height: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.adventure-page h3 {
+  font-weight: 600;
+  text-transform: none;
+  font-size: 37px;
+  letter-spacing: 0px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.adventure-page p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 28px;
+}
+
+
+.adventure-text-box {
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.img-top-adventure-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.img-top-adventure {
+  width: 80%;
+  /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);*/
+  border-radius: 2px 2px 2px 2px;
+}
+
+.img-middle-adventure-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.img-middle-adventure {
+  border-radius: 2px 2px 2px 2px;
+  height: 150px;
+  width: 80%;
+  /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);*/
+}
+
+.row {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  padding: 4px 20px 4px 20px;
+  width: 400px;
+  text-align: justify;
+}
+
+.small-img {
+  width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  flex-grow: 2;
+}
+
+.conclusion {
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+}
+
+/* Shop Page */
+
+.shop-page {
+  min-height: 1000px;
+  height: 100%;
+  text-align: center;
+}
+
+.products-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-product-banner {
+  background-image: url('shop_page/backpack_banner.jpg');
+  justify-content: flex-start;
+  margin-top : 0 !important;
+}
+
+.second-product-banner {
+  background-image: url('shop_page/travelbag_banner.jpg');
+  justify-content: flex-end;
+}
+
+.third-product-banner {
+  background-image: url('shop_page/candle_banner.jpg');
+  justify-content: flex-start;
+  margin-bottom: 0 !important;
+}
+
+.first-product-banner, .second-product-banner, .third-product-banner {
+  background-position: center;
+  height: 80vw;
+  max-height: 800px;
+  background-size: cover;
+  width: 100vw;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 20px 4px 20px;
+  width: 600px;
+  border-radius: 15px;
+  margin: 5%;
+}
+
+.image-product-card {
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  border: 5px solid white;
+}
+
+.product-title-banner {
+  color: white;
+  font-size: 1.8em;
+  font-weight: 900;
+  letter-spacing: 0.6rem;
+  text-shadow: 3px 3px #000;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.discover-title {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  font-weight: 900;
+  letter-spacing: 0.6rem;
+  text-shadow: 3px 3px #000;
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+  border: 3px white solid;
+  box-shadow: 1px 1px #000;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.discover-title:hover {
+  background-color: rgba(0,0,0,0.4);
+}
+/* Contact Page */
+
+/* FAQ Page */
+
+.faq-page {
+  min-height: 1000px;
+  height: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 20px;
+}
+
+.faq-page h1 {
+  text-align: center;
 }
