@@ -1,9 +1,26 @@
-<%= form_for @message, url:new_message_url do |f| %>
-<%= notice %>
-<%= @message.errors.full_messages.join(', ') %>
+<div class="contact-form-page">
+  <div class="contact-form-container">
 
-<%= f.text_field :name, placeholder: 'name' %>
-<%= f.email_field :email, placeholder: 'email' %>
-<%= f.text_area :body, placeholder: 'body' %>
-<%= f.submit 'Send' %>
-<% end %>
+    <div class="form-headers">
+      <h2 class="form-title"> Tell me more about your next adventure ... </h2>
+      <p class="form-paragraph"> I'll get back to you as soon as possible ! </p>
+    </div>
+
+    <%= form_for @message, url:new_message_url do |f| %>
+    <%= notice %>
+    <%= @message.errors.full_messages.join(', ') %>
+
+    <div class="form-fields-box">
+      <div class="form-fields">
+        <%= f.text_field :name, placeholder: 'Your name' %>
+        <%= f.email_field :email, placeholder: 'Your email' %>
+        <%= f.text_area :body, placeholder: 'Your message' %>
+      </div>
+      <div class="form-submit-button">
+        <%= f.submit 'Send' %>
+      </div>
+    </div>
+  <% end %>
+
+  </div>
+</div>
