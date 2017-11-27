@@ -19,7 +19,7 @@
    font-family: 'Roboto', sans-serif;
  }
 
- body{
+ body, ul{
    padding: 0;
    margin: 0;
  }
@@ -441,7 +441,55 @@ hr {
 
 /* Adventure Page */
 
-.adventure-page{
+.adventure-page {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adventure-banner {
+  background-image: url('adventure_page/adventure_banner.jpg');
+  background-position: center;
+  height: 80vh;
+  background-size: cover;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.adventure-sub-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  width: 60%;
+  flex-wrap: wrap;
+}
+
+.adventure-subtitle {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 900;
+  letter-spacing: 0.6rem;
+  text-shadow: 3px 3px #000;
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+  border: 3px white solid;
+  box-shadow: 1px 1px #000;
+  padding: 10px;
+  margin: 20px;
+}
+
+.adventure-subtitle:hover {
+  background-color: rgba(0,0,0,0.4);
+  text-decoration: none;
+  color: white;
+}
+
+.adventures-pages{
   min-height: 1000px;
   height: 100%;
   margin-left: 15%;
@@ -454,6 +502,8 @@ hr {
   justify-content: center;
   align-items: center;
 }
+
+/* adventure road page */
 
 .adventure-title {
   color: black;
@@ -478,7 +528,7 @@ hr {
   text-align: center;
 }
 
-.adventure-page h3 {
+.adventures-pages h3 {
   text-transform: uppercase;
   color: black;
   font-size: 1.5em;
@@ -491,7 +541,7 @@ hr {
   margin: 30px;
 }
 
-.adventure-page p {
+.adventures-pages p {
   font-weight: 400;
   font-size: 16px;
   margin-top: 10px;
@@ -561,9 +611,187 @@ hr {
   margin-bottom: 40px !important;
 }
 
+/* Adventure offer page */
+
+.mama-offer-box {
+  width: 800px;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.card-mama-offer {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 20px 50px 20px 50px;
+  width: 800px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.adventures-pages li  {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 28px;
+}
+
+.adventures-pages .material-icons {
+  vertical-align: middle;
+  font-size: 24px;
+  margin-right: 15px;
+  color: black;
+}
+
+.icon-big {
+  font-size: 64px !important;
+}
+
+.sub-info {
+  font-size: 14px !important;
+  margin-bottom: 20px !important;
+}
+
+.adventures-pages .contact-link {
+  text-decoration: underline;
+  color: black;
+}
+
+.adventures-pages .contact-link:hover {
+  color: red;
+}
+
+.conclusion-offer {
+  margin: 20px 0 40px 0 !important;
+  font-size: 16px !important;
+  width: 800px;
+}
+
+
 /* Shop Page */
 
 .shop-page {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-banner {
+  background-image: url('shop_page/shop_banner.jpg');
+  background-position: center;
+  height: 80vh;
+  background-size: cover;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.shop-sub-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  width: 60%;
+  flex-wrap: wrap;
+}
+
+
+.shop-subtitle {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 900;
+  letter-spacing: 0.6rem;
+  text-shadow: 3px 3px #000;
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+  border: 3px white solid;
+  box-shadow: 1px 1px #000;
+  padding: 10px;
+  margin: 20px;
+}
+
+.shop-subtitle:hover {
+  background-color: rgba(0,0,0,0.4);
+  text-decoration: none;
+  color: white;
+}
+
+/* Production Page */
+
+.production-page{
+  min-height: 1000px;
+  height: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.production-page h2 {
+  text-transform: uppercase;
+  color: black;
+  font-size: 1.5em;
+  font-weight: 900;
+  letter-spacing: 0.6rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+  border: 3px black solid;
+  padding: 10px;
+  margin: 50px 30px 30px 30px;
+}
+.production-page p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 28px;
+  text-align: justify;
+}
+
+.production-page-conclusion {
+  text-align: center !important;
+}
+
+.link-to-products {
+  text-transform: uppercase;
+  color: black;
+  font-size: 1.5em;
+  font-weight: 900;
+  letter-spacing: 0.6rem;
+  margin: 50px 0 10px 0;;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.arrow-forward {
+  color: black;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 30px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.production-page a {
+  text-decoration: none;
+}
+
+.production-page a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+/*Products Page */
+
+.products-page {
   min-height: 1000px;
   height: 100%;
   text-align: center;
@@ -576,24 +804,30 @@ hr {
   align-items: center;
 }
 
-.first-product-banner {
-  background-image: url('shop_page/backpack_banner.jpg');
+.first-products-banner {
+  background-image: url('shop_page/bags_banner.jpg');
   justify-content: flex-start;
   margin-top : 0 !important;
 }
 
-.second-product-banner {
-  background-image: url('shop_page/travelbag_banner.jpg');
+.second-products-banner {
+  background-image: url('shop_page/clothing_banner.jpg');
   justify-content: flex-end;
 }
 
-.third-product-banner {
-  background-image: url('shop_page/candle_banner.jpg');
+.third-products-banner {
+  background-image: url('shop_page/accessories_banner.jpg');
   justify-content: flex-start;
   margin-bottom: 0 !important;
 }
 
-.first-product-banner, .second-product-banner, .third-product-banner {
+.fourth-products-banner {
+  background-image: url('shop_page/accessories_banner.jpg');
+  justify-content: flex-start;
+  margin-bottom: 0 !important;
+}
+
+.first-products-banner , .second-products-banner, .third-products-banner, .fourth-products-banner {
   background-position: center;
   height: 80vw;
   max-height: 800px;
@@ -605,7 +839,7 @@ hr {
   align-items: center;
 }
 
-.product-card {
+.products-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -616,14 +850,14 @@ hr {
   margin: 5%;
 }
 
-.image-product-card {
+.image-products-card {
   width: 200px;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
   border: 5px solid white;
 }
 
-.product-title-banner {
+.products-title-banner {
   color: white;
   font-size: 1.8em;
   font-weight: 900;
@@ -649,12 +883,273 @@ hr {
 
 .discover-title:hover {
   background-color: rgba(0,0,0,0.4);
+  text-decoration: none;
+  color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Product page */
+
+.product-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-product-banner {
+  background-image: url('shop_page/first_product/tankwa.jpg');
+  background-position: center;
+  height: 100vh;
+  background-size: cover;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.second-product-banner {
+  background-image: url('shop_page/second_product/karoo.jpg');
+  background-position: center;
+  height: 100vh;
+  background-size: cover;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.product-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 4px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  width: 350px;
+  height: 320px;
+  border-radius: 5px;
+  margin: 150px;
+  background-color: white;
+}
+
+.lifestyle-img {
+  width: 400px;
+  border-radius:50%;
+  margin: 30px 0 30px 0;
+}
+
+.bags-text {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  padding-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bags-text-intro {
+  margin: 0 0 20px 0;
+  color: black;
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: 0.1rem;
+  line-height: 28px;
+  max-width: 1000px;
+}
+
+.bags-text p, .bags-media p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  max-width: 1000px;
+}
+
+.bags-text h4, .bags-media h4 {
+  text-transform: uppercase;
+  color: black;
+  font-size: 1.6em;
+  font-weight: 900;
+  letter-spacing: 0.4rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+  padding: 10px;
+  margin: 30px;
+}
+
+.bags-media {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  padding-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bags-media h3{
+  text-transform: uppercase;
+  color: black;
+  font-size: 2em;
+  font-weight: 900;
+  letter-spacing: 0.6rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+  border: 3px black solid;
+  padding: 10px;
+  margin: 30px 30px 30px 30px;
+}
+
+.bags-media li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  max-width: 1000px;
+  width: 400px;
+}
+
+.bags-media-card {
+  text-align: justify;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+}
+
+.bags-media-img-card-right {
+  border-radius: 0 3px 3px 0;
+  height: 350px;
+  width: 500px;
+}
+
+.bags-media-img-card-left {
+  border-radius: 3px 0 0 3px;
+  height: 350px;
+  width: 500px;
+}
+
+.bags-media-card-description {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bags-media-card-description p {
+  width: 400px;
+}
+
+.subtitle-gallery-bags {
+  margin-top: 100px !important;
+}
+
+.gallery-bags {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  margin-top: 30px;
+}
+
+.row-1, .row-2, .row-3, .row-4, .row5 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1000px;
+}
+
+.row-1-pic-1 , .row-1-pic-2{
+  width: 490px;
+  padding-top: 10px;
+}
+
+.row-2-pic-1, .row-2-pic-2, .row-2-pic-3 {
+  width: 323px;
+  padding-top: 10px;
+}
+
+.box-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-3-pic-1 {
+  height: 500px;
+  width: 640px;
+  padding-top: 10px;
+}
+
+.row-3-pic-2, .row-3-pic-3 {
+  width: 340px;
+  height: 250px;
+  padding-top: 10px;
+}
+
+.row-4-pic-1, .row-4-pic-2 {
+  width: 490px;
+  padding-top: 10px;
+}
+
+.description-bags-production {
+  margin-top: 50px;
+}
+
+.preorder .material-icons {
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.preorder a {
+  color: black;
+  font-size: 10px;
+  letter-spacing: 0.3rem;
+}
+
+
+
+
 /* Contact Page */
 
 .contact-form-page {
-  width: 100vw;
+  /*width: 100vw;*/
+  /*height: 80vh;*/
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-banner {
+  background-image: url('contact_page/test_1.jpg');
+  background-position: center;
   height: 80vh;
+  background-size: cover;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
