@@ -146,7 +146,7 @@
   background-size: cover;
   left: 0;*/
 
-  background-image: url(home2.jpg);
+  background-image: url('home2.jpg');
   background-position: bottom;
   height: 95vh;
   background-size: cover;
