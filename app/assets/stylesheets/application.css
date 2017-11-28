@@ -731,6 +731,104 @@ hr {
   color: white;
 }
 
+/*Products Page */
+
+.products-page {
+  min-height: 1000px;
+  height: 100%;
+  text-align: center;
+}
+
+.products-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-products-banner {
+  background-image: url('shop_page/first_product_banner.jpg');
+  justify-content: flex-start;
+  margin-top : 0 !important;
+}
+
+.second-products-banner {
+  background-image: url('shop_page/second_product_banner.jpg');
+  justify-content: flex-end;
+}
+
+.third-products-banner {
+  background-image: url('shop_page/third_product_banner.jpg');
+  justify-content: flex-start;
+  margin-bottom: 0 !important;
+}
+
+.fourth-products-banner {
+  background-image: url('shop_page/third_product_banner.jpg');
+  justify-content: flex-start;
+  margin-bottom: 0 !important;
+}
+
+.first-products-banner , .second-products-banner, .third-products-banner, .fourth-products-banner {
+  background-position: center;
+  height: 80vw;
+  max-height: 800px;
+  background-size: cover;
+  width: 100vw;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.products-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 20px 4px 20px;
+  width: 600px;
+  border-radius: 15px;
+  margin: 5%;
+}
+
+.image-products-card {
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  border: 5px solid white;
+}
+
+.products-title-banner {
+  color: white;
+  font-size: 1.8em;
+  font-weight: 900;
+  letter-spacing: 0.6rem;
+  text-shadow: 3px 3px #000;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.discover-title {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  font-weight: 900;
+  letter-spacing: 0.6rem;
+  text-shadow: 3px 3px #000;
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+  border: 3px white solid;
+  box-shadow: 1px 1px #000;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.discover-title:hover {
+  background-color: rgba(0,0,0,0.4);
+  text-decoration: none;
+  color: white;
+}
+
 /* Production Page */
 
 .production-page{
@@ -798,117 +896,6 @@ hr {
   text-decoration: underline;
   color: black;
 }
-
-/*Products Page */
-
-.products-page {
-  min-height: 1000px;
-  height: 100%;
-  text-align: center;
-}
-
-.products-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.first-products-banner {
-  background-image: url('shop_page/bags_banner.jpg');
-  justify-content: flex-start;
-  margin-top : 0 !important;
-}
-
-.second-products-banner {
-  background-image: url('shop_page/clothing_banner.jpg');
-  justify-content: flex-end;
-}
-
-.third-products-banner {
-  background-image: url('shop_page/accessories_banner.jpg');
-  justify-content: flex-start;
-  margin-bottom: 0 !important;
-}
-
-.fourth-products-banner {
-  background-image: url('shop_page/accessories_banner.jpg');
-  justify-content: flex-start;
-  margin-bottom: 0 !important;
-}
-
-.first-products-banner , .second-products-banner, .third-products-banner, .fourth-products-banner {
-  background-position: center;
-  height: 80vw;
-  max-height: 800px;
-  background-size: cover;
-  width: 100vw;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.products-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 20px 4px 20px;
-  width: 600px;
-  border-radius: 15px;
-  margin: 5%;
-}
-
-.image-products-card {
-  width: 200px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
-  border: 5px solid white;
-}
-
-.products-title-banner {
-  color: white;
-  font-size: 1.8em;
-  font-weight: 900;
-  letter-spacing: 0.6rem;
-  text-shadow: 3px 3px #000;
-  margin-bottom: 20px;
-  line-height: 1.2;
-}
-.discover-title {
-  text-decoration: none;
-  color: white;
-  font-size: 1em;
-  font-weight: 900;
-  letter-spacing: 0.6rem;
-  text-shadow: 3px 3px #000;
-  margin-bottom: 2.5rem;
-  line-height: 1.2;
-  border: 3px white solid;
-  box-shadow: 1px 1px #000;
-  padding: 10px;
-  margin-top: 30px;
-}
-
-.discover-title:hover {
-  background-color: rgba(0,0,0,0.4);
-  text-decoration: none;
-  color: white;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Product page */
 
@@ -1155,7 +1142,7 @@ hr {
 }
 
 .contact-banner {
-  background-image: url('contact_page/test_1.jpg');
+  background-image: url('contact_page/contact_banner.jpg');
   background-position: center;
   height: 80vh;
   background-size: cover;
