@@ -83,7 +83,7 @@
 .footer-container {
   left: 0;
   bottom: 0;
-  height: 90px;
+  height: 80px;
   width: 100%;
   background-color: white;
   display: flex;
@@ -171,7 +171,7 @@
 .about-banner {
   /*background-image: url('about_page/about_banner.jpg');*/
   background-image: url('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511949565/about_page/about_banner_f22o2q.jpg');
-  height: 80vh;
+  height: 85vh;
   background-size: cover;
   width: 100vw;
   display: flex;
@@ -463,7 +463,7 @@ hr {
 .adventure-banner {
   background-image: url('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511947464/adventure_page/adventure_banner_zi0tc8.jpg');
   background-position: center;
-  height: 80vh;
+  height: 85vh;
   background-size: cover;
   width: 100vw;
   display: flex;
@@ -695,7 +695,7 @@ hr {
   /*background-image: url('shop_page/shop_banner.jpg');*/
   background-image: url('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511952199/shop_page/shop_banner_gmxslv.jpg');
   background-position: center;
-  height: 80vh;
+  height: 85vh;
   background-size: cover;
   width: 100vw;
   display: flex;
@@ -1164,9 +1164,6 @@ hr {
   letter-spacing: 0.3rem;
 }
 
-
-
-
 /* Contact Page */
 
 .contact-form-page {
@@ -1182,7 +1179,7 @@ hr {
   /*background-image: url('contact_page/contact_banner.jpg');*/
   background-image: url('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511951863/contact_page/contact_banner_yy4ddz.jpg');
   background-position: center;
-  height: 80vh;
+  height: 85vh;
   background-size: cover;
   width: 100vw;
   display: flex;

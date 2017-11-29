@@ -35,7 +35,7 @@
     <%= yield %>
 
     <footer>
-      <div class="footer-container <%= current_page?('/') ? ' footer-container-home' : '' %>">
+      <div class="footer-container <%= current_page?('/') || current_page?('/about') || current_page?('/adventure') || current_page?('/shop') || current_page?('/contact-me') ? ' footer-container-home' : '' %>">
         <div class="top-line">
           <div class="socials">
             <a href="https://www.facebook.com/MamaMotoParisCapeTown/" target="_blank">
