@@ -3,6 +3,7 @@
   <head>
     <title>MamaMotoWebsite</title>
     <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width" />
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
@@ -15,11 +16,13 @@
 
     <nav>
       <div class="nav-container">
-        <div class="nav">
+        <div class="nav-left">
           <div class="logo">
             <a href='/'><%#= image_tag('logo.png', class:'mama_logo') %></a>
             <a href='/'><%= image_tag('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511949323/socials/logo.png', class:'mama_logo') %></a>
           </div>
+        </div>
+        <div class="nav-right non-mobile-menu">
           <div class="nav-items">
             <%= link_to 'ABOUT', about_path, class:'nav-item'%>
             <%= link_to 'ADVENTURE', adventure_path, class:'nav-item'%>
@@ -27,8 +30,24 @@
             <%= link_to 'CONTACT', new_message_path, class:'nav-item' %>
             <%= link_to 'FAQ', faq_path, class:'nav-item' %>
           </div>
-          <%#= image_tag('logo_moto.png', class:'mama_logo_moto') %>
-          <%= image_tag('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511949324/socials/logo_moto.png', class:'mama_logo_moto') %>
+
+          <div class="dropdown mobile-menu">
+            <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <%=image_tag('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511992853/menu-burger.png', class:'menu-burger') %>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+              <li><%= link_to 'ABOUT', about_path, class:'nav-item'%></li>
+              <li><%= link_to 'ADVENTURE', adventure_path, class:'nav-item'%></li>
+              <li><%= link_to 'SHOP', shop_path, class:'nav-item'%></li>
+              <li><%= link_to 'CONTACT', new_message_path, class:'nav-item' %></li>
+              <li><%= link_to 'FAQ', faq_path, class:'nav-item' %></li>
+            </ul>
+          </div>
+
+          <div class="logo-moto">
+            <%#= image_tag('logo_moto.png', class:'mama_logo_moto') %>
+            <%= image_tag('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511949324/socials/logo_moto.png', class:'mama_logo_moto') %>
+          </div>
         </div>
       </div>
     </nav>

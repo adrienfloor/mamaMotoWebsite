@@ -1,7 +1,18 @@
-<div class="shop-page">
-  <div id='product-component-3'></div>
-</div>
 
+<div class="product-page">
+
+  <h3> More details coming soon </h3>
+
+  <div class="third-product-banner">
+    <div class="product-card">
+      <div id='product-component-buy-button-card-3'></div>
+      <div class="preorder"><i class="material-icons">lightbulb_outline</i><%= link_to ' why pre-order ?', production_path %></div>
+    </div>
+
+    <!-- <div id='product-component-buy-button-3'></div>
+    <div class="preorder"><i class="material-icons">lightbulb_outline</i><%#= link_to ' why pre-order ?', production_path %></div> -->
+  </div>
+</div>
 
 <script>
 
@@ -34,35 +45,44 @@
       appId: '6',
     });
 
-    /////// PRODUCT //////////
+    /////// PRODUCT  ////////
+
+    /////// CARD WITH BUY BUTTON  ////////
 
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
         id: [412798058539],
-        node: document.getElementById('product-component-3'),
+        node: document.getElementById('product-component-buy-button-card-3'),
         moneyFormat: '%E2%82%AC%7B%7Bamount%7D%7D',
         options: {
           "product": {
+            "order": [
+              'title',
+              'price',
+              'description',
+              'button'
+            ],
             "text":{
               "button": "PREORDER",
-              outOfStock: 'Out of stock',
-              unavailable: 'Unavailable',
+              "outOfStock": 'Out of stock',
+              "unavailable": 'Unavailable',
             },
             "layout": "vertical",
             "variantId": "all",
             "width": "400px",
             "contents": {
-              "img": true,
+              "img": false,
               "imgWithCarousel": false,
               "variantTitle": false,
-              "description": false,
+              "description": true,
               "buttonWithQuantity": false,
               "quantity": false
             },
             "styles": {
               "product": {
                 "img": {
-                "border-radius": "10px"
+                "border-radius": "10px",
+                "box-shadow": "0 4px 4px 0 rgba(0,0,0,0.2)"
                 },
                 "text-align": "center",
                 "@media (min-width: 601px)": {
@@ -73,6 +93,7 @@
               },
               "button": {
                 "border-radius": "5px",
+                "margin-top": "10px !important",
                 "color": "white",
                 "font-weight": "bold",
                 "border": "1px solid black",
@@ -82,13 +103,25 @@
                 }
               },
               "title": {
-                "font-size": "26px"
+                "font-size": "22px",
+                "color": "black",
+                "font-weight": "bold",
+                "font-family": "'Roboto', sans-serif;",
+                "margin-top": "20px"
               },
               "price": {
-                "font-size": "18px"
+                "font-size": "28px",
+                "color": "black",
+                "font-family": "'Roboto', sans-serif;",
+              },
+              "description": {
+                "background-color": "#f2f2f2",
+                "width": "4000px !important",
+                "padding": "5px",
+                "text-align": "justify"
               },
               "compareAt": {
-                "font-size": "15px"
+                "font-size": "0px"
               }
             }
           },
@@ -126,6 +159,89 @@
       });
     });
 
+    /////// BUY BUTTON ONLY  ////////
+
+    // ShopifyBuy.UI.onReady(client).then(function (ui) {
+    //   ui.createComponent('product', {
+    //     id: [412798058539],
+    //     node: document.getElementById('product-component-buy-button-3'),
+    //     moneyFormat: '%E2%82%AC%7B%7Bamount%7D%7D',
+    //     options: {
+    //       "product": {
+    //         "text":{
+    //           "button": "PREORDER THE BAG",
+    //           "outOfStock": 'Out of stock',
+    //           "unavailable": 'Unavailable',
+    //         },
+    //         "layout": "vertical",
+    //         "variantId": "all",
+    //         "width": "400px",
+    //         "contents": {
+    //           "img": false,
+    //           "imgWithCarousel": false,
+    //           "variantTitle": false,
+    //           "description": false,
+    //           "buttonWithQuantity": false,
+    //           "quantity": false,
+    //           "title": false,
+    //           "price": false
+    //         },
+    //         "styles": {
+    //           "product": {
+    //             "text-align": "center",
+    //             "@media (min-width: 601px)": {
+    //               "max-width": "100%",
+    //               "margin-left": "0",
+    //               "margin-bottom": "50px"
+    //             }
+    //           },
+    //           "button": {
+    //             "border-radius": "5px",
+    //             "width": "100%",
+    //             "margin": "30px 0 20px 0 !important",
+    //             "color": "white",
+    //             "font-weight": "bold",
+    //             "border": "1px solid black",
+    //             "background-color": "#000000",
+    //             ":hover": {
+    //               "background-color": "#404040"
+    //             }
+    //           }
+    //         }
+    //       },
+    //       "cart": {
+    //         "text":{
+    //           "button": "ORDER"
+    //         },
+    //         "contents": {
+    //           "button": true
+    //         },
+    //         "styles": {
+    //           "button": {
+    //             "font-weight": "bold",
+    //             "background-color": "#000000",
+    //             ":hover": {
+    //               "background-color": "#404040"
+    //             }
+    //           },
+    //           "footer": {
+    //             "background-color": "#ffffff"
+    //           }
+    //         }
+    //       },
+    //       "toggle": {
+    //         "styles": {
+    //           "toggle": {
+    //             "background-color": "#000000",
+    //             ":hover": {
+    //               "background-color": "#404040"
+    //             }
+    //           }
+    //         }
+    //       }
+    //     }
+    //   });
+    // });
 
   }
 })();

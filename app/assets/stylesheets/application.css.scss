@@ -26,42 +26,85 @@
 
 /* Header */
 
-.nav-container {
+nav {
   width: 100vw;
-  height: 100px;
-  top: 0;
   border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-.nav {
+.nav-container {
+  height: 80px;
+  top: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  @media only screen and (min-width : 320px) and (max-width : 480px) {
+      margin-left: 10px;
+      margin-right: 0;
+    }
+}
+
+.nav-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
 }
 
 .logo {
-  height: 100px;
-  display: flex;
+  /*display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-left: 0;
-  width: 800px;
-}
-
-.mama_logo {
-  width: 400px;
-}
-
-.mama_logo_moto {
-  width: 80px;
+  width: 40%;*/
 }
 
 .nav-items {
   height: 100px;
-  width: 600px;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 30px;
+  @media (min-width : 768px) and (max-width : 1024px) {
+      width: 100%;
+    }
+  @media only screen and (min-width : 320px) and (max-width : 480px) {
+      display: none;
+    }
+}
+
+.mobile-menu {
+  @media only screen and (min-width : 480px) {
+      display: none;
+    }
+}
+
+.menu-burger {
+  width: 30px;
+  height: 35px;
+}
+
+.mobile-menu .dropdown-menu {
+  position: relative;
+  top: 200px;
+  width: 100%;
+  font-size: 36px;
+}
+
+.logo-moto {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 10%;
 }
 
 .nav-item {
@@ -72,7 +115,30 @@
 
 .nav-item:hover {
   color: grey;
+  text-decoration: none;
 }
+
+.mama_logo {
+  width: 300px;
+  @media (min-width : 768px) and (max-width : 1024px) {
+      width: 200px;
+    }
+    @media only screen and (min-width : 320px) and (max-width : 480px) {
+        width: 250px;
+      }
+}
+
+.mama_logo_moto {
+  width: 80px;
+  @media (min-width : 768px) and (max-width : 1024px) {
+      width: 60px;
+    }
+  @media only screen and (min-width : 320px) and (max-width : 480px) {
+      width: 0;
+    }
+}
+
+
 
 /* Footer */
 
@@ -83,7 +149,7 @@
 .footer-container {
   left: 0;
   bottom: 0;
-  height: 80px;
+  height: 70px;
   width: 100%;
   background-color: white;
   display: flex;
@@ -100,17 +166,17 @@
 
 .socials {
   display: flex;
-  width: 400px;
+  width: 300px;
   justify-content: space-between;
   margin-top: 5px;
 }
 
 .social-item {
-  width: 45px;
+  width: 40px;
 }
 
 .social-item:hover {
-    width: 47px;
+    width: 42px;
 }
 
 .bottom-line {
@@ -122,7 +188,7 @@
 }
 
 .bottom-line .credits {
-  font-size: 10px;
+  font-size: 9px;
   color: black;
   text-decoration: none;
 }
@@ -133,6 +199,7 @@
 
 /* Home Page */
 
+
 .container-home-page {
 
   /*background-image: url(home2.jpg);*/
@@ -141,12 +208,21 @@
   min-width: 1024px;
   /* Set up proportionate scaling */
   width: 100%;
-  height: auto;
+  height:auto;
   /* Set up positioning */
   position: fixed;
-  background-size: cover;
+  background-size:cover;
   background-position: bottom;
   left: 0;
+
+  @media only screen and (min-width : 320px) and (max-width : 480px) {
+    background-image: url('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511949327/socials/home2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    left: -210px;
+    }
+
 
   /*background-image: url('home2.jpg');
   background-position: bottom;
@@ -184,6 +260,14 @@
   justify-content: space-between;
   align-items: center;
   margin: 10%;
+  @media (min-width : 768px) and (max-width : 1024px) {
+      margin: 7% 0 0 0;
+      flex-wrap: wrap;
+    }
+}
+
+.brand-box {
+  margin: 50px;
 }
 
 .about-subtitle {
@@ -216,8 +300,11 @@
   padding: 8px;
   margin-bottom: 10px;
   position: absolute;
-  left: 200px;
-  top: 175px;
+  left: 100px;
+  top: 125px;
+  @media (min-width : 768px) and (max-width : 1024px) {
+    left: 50px;
+    }
 }
 
 .arrow-back:hover {
@@ -225,8 +312,6 @@
 }
 
 .about-road-page {
-  min-height: 1000px;
-  height: 100%;
   margin-left: 15%;
   margin-right: 15%;
   padding-bottom: 20px;
@@ -324,7 +409,7 @@ hr {
 
 #carousel-1 {
   margin-bottom: 50px;
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .link-marie-claire {
@@ -344,9 +429,12 @@ hr {
 }
 
 #carousel-2, #carousel-3 {
-  width: 1200px;
+  width: 900px;
   margin-bottom: 50px;
   margin-top: 30px;
+  @media (min-width : 768px) and (max-width : 1024px) {
+      width: 700px;
+    }
 }
 
 .link-to-top {
@@ -375,6 +463,9 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (min-width : 768px) and (max-width : 1024px) {
+      min-height: 0;
+    }
 }
 
 .about-brand-title {
@@ -406,10 +497,17 @@ hr {
   font-size: 16px;
   line-height: 28px;
   max-width: 1000px;
+  @media (min-width : 768px) and (max-width : 1024px) {
+    font-size: 16px;
+    line-height: 20px;
+    }
 }
 
 .img-bra {
   border-radius: 2px;
+  @media (min-width : 768px) and (max-width : 1024px) {
+      max-width: 600px;
+    }
 }
 
 .about-brand-card {
@@ -424,20 +522,33 @@ hr {
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 3px;
+  @media (min-width : 768px) and (max-width : 1024px) {
+      flex-wrap: wrap;
+      width: 600px;
+      height: 300px;
+      justify-content: space-around;
+    }
 }
 
 .about-brand-img-card-right {
   border-radius: 0 3px 3px 0;
   height: 400px;
   width: 500px;
+  @media (min-width : 768px) and (max-width : 1024px) {
+      height: 200px;
+      width: 250px;
+    }
 }
 
 .about-brand-img-card-left {
   border-radius: 3px 0 0 3px;
   height: 400px;
   width: 500px;
+  @media (min-width : 768px) and (max-width : 1024px) {
+      height: 200px;
+      width: 250px;
+    }
 }
-
 
 .about-brand-card-description {
   width: 500px;
@@ -445,10 +556,18 @@ hr {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @media (min-width : 768px) and (max-width : 1024px) {
+      width: 300px;
+
+      display: block;
+    }
 }
 
 .about-brand-card-description p {
   width: 400px;
+  @media (min-width : 768px) and (max-width : 1024px) {
+      width: 300px;
+    }
 }
 
 /* Adventure Page */
@@ -771,8 +890,8 @@ hr {
 
 .fourth-products-banner {
   /*background-image: url('shop_page/third_product_banner.jpg');*/
-  background-image: url('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511952207/shop_page/third_product_banner_mknwpn.jpg');
-  justify-content: flex-start;
+  background-image: url('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511978106/shop_page/P1010672.jpg');
+  justify-content: flex-end;
   margin-bottom: 0 !important;
 }
 
@@ -796,7 +915,7 @@ hr {
   padding: 4px 20px 4px 20px;
   width: 600px;
   border-radius: 15px;
-  margin: 5%;
+  margin: 2%;
 }
 
 .image-products-card {
@@ -908,6 +1027,7 @@ hr {
 
 .product-page {
   height: 100%;
+  min-height: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -938,6 +1058,7 @@ hr {
   align-items: flex-start;
 }
 
+
 .karoo-top-description-box {
   display: flex;
   justify-content: center;
@@ -965,7 +1086,6 @@ hr {
   margin-bottom: 50px;
 }
 
-
 .product-card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 4px;
@@ -975,7 +1095,7 @@ hr {
   justify-content:space-between;
   align-items: center;
   width: 350px;
-  height: 320px;
+  height: 330px;
   border-radius: 5px;
   margin: 150px;
   background-color: white;
@@ -1167,8 +1287,6 @@ hr {
 /* Contact Page */
 
 .contact-form-page {
-  /*width: 100vw;*/
-  /*height: 80vh;*/
   height: 100%;
   display: flex;
   justify-content: center;
@@ -1185,6 +1303,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px 0 70px 0;
 }
 
 .contact-form-container {
@@ -1221,7 +1340,7 @@ hr {
 }
 
 .new_message {
-  margin-top: 50px;
+  /*margin-top: 50px;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
