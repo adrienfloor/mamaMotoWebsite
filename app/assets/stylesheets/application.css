@@ -135,25 +135,27 @@
 
 .container-home-page {
 
-  /*background-image: url(home.jpg);
+  /*background-image: url(home2.jpg);*/
+  background-image: url('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511949327/socials/home2.jpg');
   min-height: 100%;
-  min-width: 1024px;*/
+  min-width: 1024px;
   /* Set up proportionate scaling */
-  /*width: 100%;
-  height: auto;*/
+  width: 100%;
+  height: auto;
   /* Set up positioning */
-  /*position: fixed;
+  position: fixed;
   background-size: cover;
-  left: 0;*/
+  background-position: bottom;
+  left: 0;
 
-  background-image: url('home2.jpg');
+  /*background-image: url('home2.jpg');
   background-position: bottom;
   height: 95vh;
   background-size: cover;
   width: 100vw;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: flex-start;*/
 
 }
 
@@ -167,8 +169,8 @@
 }
 
 .about-banner {
-  background-image: url('about_page/about_banner.jpg');
-  background-position: center;
+  /*background-image: url('about_page/about_banner.jpg');*/
+  background-image: url('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511949565/about_page/about_banner_f22o2q.jpg');
   height: 80vh;
   background-size: cover;
   width: 100vw;
@@ -459,7 +461,7 @@ hr {
 }
 
 .adventure-banner {
-  background-image: url('adventure_page/adventure_banner.jpg');
+  background-image: url('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511947464/adventure_page/adventure_banner_zi0tc8.jpg');
   background-position: center;
   height: 80vh;
   background-size: cover;
@@ -690,7 +692,8 @@ hr {
 }
 
 .shop-banner {
-  background-image: url('shop_page/shop_banner.jpg');
+  /*background-image: url('shop_page/shop_banner.jpg');*/
+  background-image: url('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511952199/shop_page/shop_banner_gmxslv.jpg');
   background-position: center;
   height: 80vh;
   background-size: cover;
@@ -747,24 +750,28 @@ hr {
 }
 
 .first-products-banner {
-  background-image: url('shop_page/first_product_banner.jpg');
+  /*background-image: url('shop_page/first_product_banner.jpg');*/
+  background-image: url('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511952175/shop_page/first_product_banner_bzn5ua.jpg');
   justify-content: flex-start;
   margin-top : 0 !important;
 }
 
 .second-products-banner {
-  background-image: url('shop_page/second_product_banner.jpg');
+  /*background-image: url('shop_page/second_product_banner.jpg');*/
+  background-image: url('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511952203/shop_page/second_product_banner_wmqxqo.jpg');
   justify-content: flex-end;
 }
 
 .third-products-banner {
-  background-image: url('shop_page/third_product_banner.jpg');
+  /*background-image: url('shop_page/third_product_banner.jpg');*/
+  background-image: url('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511952207/shop_page/third_product_banner_mknwpn.jpg');
   justify-content: flex-start;
   margin-bottom: 0 !important;
 }
 
 .fourth-products-banner {
-  background-image: url('shop_page/third_product_banner.jpg');
+  /*background-image: url('shop_page/third_product_banner.jpg');*/
+  background-image: url('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511952207/shop_page/third_product_banner_mknwpn.jpg');
   justify-content: flex-start;
   margin-bottom: 0 !important;
 }
@@ -908,7 +915,8 @@ hr {
 }
 
 .first-product-banner {
-  background-image: url('shop_page/first_product/tankwa.jpg');
+  /*background-image: url('shop_page/first_product/tankwa.jpg');*/
+  background-image: url('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511953298/shop_page/first_product/tankwa_owhyvq.jpg');
   background-position: center;
   height: 100vh;
   background-size: cover;
@@ -919,7 +927,8 @@ hr {
 }
 
 .second-product-banner {
-  background-image: url('shop_page/second_product/karoo.jpg');
+  /*background-image: url('shop_page/second_product/karoo.jpg');*/
+  background-image: url('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511956979/shop_page/second_product/karoo.jpg');
   background-position: center;
   height: 100vh;
   background-size: cover;
@@ -928,6 +937,34 @@ hr {
   justify-content: flex-end;
   align-items: flex-start;
 }
+
+.karoo-top-description-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin-bottom: 50px;
+  height: 200px;
+}
+
+.karoo-top-description-img {
+  max-width: 350px;
+
+}
+
+.karoo-top-description {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: justify;
+  height: 200px;
+
+}
+
+.description-shoulder {
+  margin-bottom: 50px;
+}
+
 
 .product-card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -1142,7 +1179,8 @@ hr {
 }
 
 .contact-banner {
-  background-image: url('contact_page/contact_banner.jpg');
+  /*background-image: url('contact_page/contact_banner.jpg');*/
+  background-image: url('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511951863/contact_page/contact_banner_yy4ddz.jpg');
   background-position: center;
   height: 80vh;
   background-size: cover;

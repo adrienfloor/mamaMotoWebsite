@@ -17,7 +17,8 @@
       <div class="nav-container">
         <div class="nav">
           <div class="logo">
-            <a href='/'><%= image_tag('logo.png', class:'mama_logo') %></a>
+            <a href='/'><%#= image_tag('logo.png', class:'mama_logo') %></a>
+            <a href='/'><%= image_tag('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511949323/socials/logo.png', class:'mama_logo') %></a>
           </div>
           <div class="nav-items">
             <%= link_to 'ABOUT', about_path, class:'nav-item'%>
@@ -26,7 +27,8 @@
             <%= link_to 'CONTACT', new_message_path, class:'nav-item' %>
             <%= link_to 'FAQ', faq_path, class:'nav-item' %>
           </div>
-          <%= image_tag('logo_moto.png', class:'mama_logo_moto') %>
+          <%#= image_tag('logo_moto.png', class:'mama_logo_moto') %>
+          <%= image_tag('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511949324/socials/logo_moto.png', class:'mama_logo_moto') %>
         </div>
       </div>
     </nav>
@@ -36,10 +38,22 @@
       <div class="footer-container <%= current_page?('/') ? ' footer-container-home' : '' %>">
         <div class="top-line">
           <div class="socials">
-            <a href="https://www.facebook.com/MamaMotoParisCapeTown/" target="_blank"><%= image_tag('socials/facebook.png', class:'social-item') %></a>
-            <a href="https://www.instagram.com/mamamoto_pct/" target="_blank"><%= image_tag('socials/instagram.png', class:'social-item') %></a>
-            <a href="https://medium.com/@cindycherchevsky" target="_blank"><%= image_tag('socials/medium.png', class:'social-item') %></a>
-            <a href="https://www.youtube.com/channel/UCSr3uK9z7yUdXUwOOcgfYrg" target="_blank"><%= image_tag('socials/youtube.png', class:'social-item') %></a>
+            <a href="https://www.facebook.com/MamaMotoParisCapeTown/" target="_blank">
+              <%#= image_tag('socials/facebook.png', class:'social-item') %>
+              <%= image_tag('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511947367/socials/facebook_tn7ool.png', class:'social-item') %>
+            </a>
+            <a href="https://www.instagram.com/mamamoto_pct/" target="_blank">
+              <%#= image_tag('socials/instagram.png', class:'social-item') %>
+              <%= image_tag('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511947367/socials/instagram_hb6fpd.png', class:'social-item') %>
+            </a>
+            <a href="https://medium.com/@cindycherchevsky" target="_blank">
+              <%#= image_tag('socials/medium.png', class:'social-item') %>
+              <%= image_tag('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511947367/socials/medium_bvt7hg.png', class:'social-item') %>
+            </a>
+            <a href="https://www.youtube.com/channel/UCSr3uK9z7yUdXUwOOcgfYrg" target="_blank">
+              <%#= image_tag('socials/youtube.png', class:'social-item') %>
+              <%= image_tag('http://res.cloudinary.com/dx8cyvfka/image/upload/v1511947367/socials/youtube_nkmsdu.png', class:'social-item') %>
+            </a>
           </div>
         </div>
         <div class="bottom-line">
